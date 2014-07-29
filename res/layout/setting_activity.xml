@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:splitMotionEvents="false" >
+
+    <RelativeLayout
+        android:id="@+id/title_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/green" >
+
+        <RelativeLayout
+            android:id="@+id/title_back_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:background="@drawable/title_back_left_layout" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back_white" />
+            <TextView
+                style="@style/title_textview"
+                android:text="@string/setting_title" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/vice_title" >
+
+        <TextView
+            style="@style/vice_title_textview"
+            android:text="@string/model_1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            style="@style/function_textview"
+            android:text="@string/setting_open_box" />
+
+        <com.qihoo.zxc.view.OptionCheckBox
+            android:id="@+id/open_box_checkbox"
+            style="@style/option_checkbox"
+            android:checked="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/setting_content_grey" />
+
+    <RelativeLayout
+        android:id="@+id/hidden_setting_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/function_layout" >
+
+        <TextView
+            style="@style/function_textview"
+            android:text="@string/setting_auto_hide" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/setting_content_grey" />
+
+    <RelativeLayout style="@style/vice_title" >
+
+        <TextView
+            style="@style/vice_title_textview"
+            android:text="@string/model_2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            style="@style/function_textview"
+            android:text="@string/setting_speedup" />
+
+        <com.qihoo.zxc.view.OptionCheckBox style="@style/option_checkbox" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/setting_content_grey" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            style="@style/function_textview"
+            android:text="@string/setting_screenshot" />
+
+        <com.qihoo.zxc.view.OptionCheckBox style="@style/option_checkbox" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/setting_content_grey" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            style="@style/function_textview"
+            android:text="@string/setting_strategy_remind" />
+
+        <com.qihoo.zxc.view.OptionCheckBox style="@style/option_checkbox" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/setting_content_grey" />
+
+    <RelativeLayout
+        android:id="@+id/time_line_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/function_layout" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:gravity="center"
+            android:text="创建桌面快捷方式"
+            android:textColor="@color/setting_content_grey"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/setting_content_grey" />
+
+</LinearLayout>

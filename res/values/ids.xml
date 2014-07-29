@@ -1,0 +1,6 @@
+<resources>
+
+     <item name="OPEN" type="id"/>
+     <item name="HIDE" type="id"/>
+     <item name="MORE" type="id"/>
+</resources>

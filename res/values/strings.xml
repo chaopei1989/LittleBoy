@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">小玩伴</string>
+    <string name="setting_title">360小玩伴</string>
+    <string name="game_box_title">360安全游戏盒</string>
+	<string name="model_1">悬浮框</string>
+	<string name="setting_open_box">开启小玩伴</string>
+	<string name="setting_auto_hide">悬浮框显示设置</string>
+	<string name="model_2">其他功能</string>
+	<string name="setting_speedup">游戏加速</string>
+	<string name="setting_gift">礼包提醒</string>
+	<string name="setting_screenshot">滑动截屏</string>
+	<string name="setting_open_statistics">游戏时光</string>
+	<string name="setting_strategy_remind">攻略提醒</string>
+	
+	<string name="notification_notify">360 小玩伴正在运行中</string>
+    <string name="notification_title">360 小玩伴</string>
+    <string name="notification_desc">我们来愉快地玩耍吧</string>
+    <string name="strategy_title">攻略</string>
+    <string name="hidden_setting_title">悬浮框显示设置</string>
+    <string name="time_line_title">游戏时光</string>
+</resources>

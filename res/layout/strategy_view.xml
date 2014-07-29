@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/strategy_layout"
+    android:layout_width="@dimen/strategy_width"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/strategy_innerlayout"
+        android:layout_width="@dimen/strategy_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_linearlayout"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/strategy_listview"
+            android:layout_width="@dimen/strategy_width"
+            android:layout_height="@dimen/strategy_height" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/strategy_width"
+            android:layout_height="@dimen/strategy_height" >
+
+            <WebView
+                android:id="@+id/strategy_webview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <ProgressBar
+                android:id="@+id/strategy_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/strategy_width"
+                android:layout_height="3dp"
+                android:layout_alignParentTop="true"
+                android:max="100"
+                android:progress="0" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/title_linearlayout"
+        android:layout_width="@dimen/strategy_width"
+        android:layout_height="40dp"
+        android:background="@drawable/title_corner" >
+	
+        <RelativeLayout
+            android:id="@+id/title_back_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_back_left_layout"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp" >
+
+            <ImageView
+                android:id="@+id/back_imageview"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back_white" />
+
+            <TextView
+                style="@style/title_textview"
+                android:text="@string/strategy_title" />
+           
+        </RelativeLayout>
+         <ImageView 
+                android:layout_centerInParent="true"
+                android:src="@drawable/hold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:id="@+id/title_close_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/title_back_right_layout"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp" >
+
+            <TextView
+                style="@style/close_textview"
+                android:text="关闭" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
